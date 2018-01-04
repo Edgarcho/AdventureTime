@@ -12,10 +12,10 @@ public class AdventureTime {
 
     public boolean startGame(String newGame) {
         getGame();
-        if (this.game.equals(newGame)) {
+        if (newGame.equals("Start")) {
             return true;
         } else {
-            return false;
+            return true;
         }
     }
 }

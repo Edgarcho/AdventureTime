@@ -7,9 +7,15 @@ import static org.junit.Assert.*;
  */
 public class AdventureTimeTest {
     @Test
-    public void startAdventureTime_startsNewGame_NewGame() throws Exception {
+    public void startGame_startsNewGame_true() throws Exception {
         AdventureTime testAdventureTime = new AdventureTime("Start");
         assertEquals(true, testAdventureTime.startGame("Start"));
+    }
+
+    @Test
+    public void startGame_exitGame_false() throws Exception {
+        AdventureTime testAdventureTime = new AdventureTime("Exit");
+        assertEquals(false, testAdventureTime.startGame("Exit"));
     }
 
 }
