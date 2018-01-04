@@ -15,7 +15,7 @@ public class AdventureTime {
         if (newGame.equals("Start")) {
             return true;
         } else {
-            return true;
+            return false;
         }
     }
 }
