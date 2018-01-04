@@ -5,12 +5,8 @@ public class NewGame {
     private String direction = "";
     private int turn = 0;
     public NewGame (String input) {
+        this.turn = 0;
         this.direction = input;
-        this.turn = turn;
-    }
-
-    public String getDirection() {
-        return this.direction;
     }
 
     public int getTurn() {
@@ -31,12 +27,6 @@ public class NewGame {
         } else if (this.turn == 1 && input0.equals("Wait for zombies")) {
             this.turn += 3; // turn 4
             return "After a few hours, you see zombies. The zombies start to dance. Enter either: \"Dance with the zombies\" or \"Annihilate the zombies\"";
-//        } else if (this.turn == 2 && input0.equals()) {
-//
-//        } else if () {
-//
-//        } else if () {
-
         } else if (this.turn == 2 && input0.equals("Fight fire monster")) {
             this.turn += 3; //turn 5
             return "You enter the Candy Kingdom and see the Fire Monster wrecking havoc. Enter either: \"Take a swing from your sword\" or \"Use Jake\"";

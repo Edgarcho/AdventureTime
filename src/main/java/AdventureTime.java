@@ -1,6 +1,7 @@
 /**
  * Created by Guest on 1/4/18.
  */
+
 public class AdventureTime {
     private String game = "";
     public AdventureTime(String input) {
