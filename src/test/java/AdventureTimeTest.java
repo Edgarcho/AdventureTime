@@ -18,4 +18,10 @@ public class AdventureTimeTest {
         assertEquals(false, testAdventureTime.startGame("Exit"));
     }
 
+    @Test
+    public void getTurn_add1toTurn_1() throws Exception {
+        NewGame testNewGame = new NewGame("string");
+        testNewGame.returnMove("string");
+        assertEquals(1, testNewGame.getTurn());
+    }
 }
