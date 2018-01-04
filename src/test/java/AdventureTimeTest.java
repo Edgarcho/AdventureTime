@@ -21,7 +21,7 @@ public class AdventureTimeTest {
     @Test
     public void getTurn_add1toTurn_1() throws Exception {
         NewGame testNewGame = new NewGame("string");
-        testNewGame.returnMove("string");
+        testNewGame.returnMove("Let's go on adventures together!");
         assertEquals(1, testNewGame.getTurn());
     }
 }
