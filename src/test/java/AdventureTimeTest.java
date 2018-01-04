@@ -28,6 +28,6 @@ public class AdventureTimeTest {
     @Test
     public void returnMove_returnsString_true() throws Exception {
         NewGame testNewGame = new NewGame("string");
-        assertEquals("", testNewGame.returnMove("Let's go on adventures together!").getClass().toString());
+        assertEquals("class java.lang.String", testNewGame.returnMove("Let's go on adventures together!").getClass().toString());
     }
 }
