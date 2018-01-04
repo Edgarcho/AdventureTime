@@ -13,7 +13,7 @@ public class AdventureTime {
     public boolean startGame(String newGame) {
         getGame();
         if (this.game.equals(newGame)) {
-            return false;
+            return true;
         } else {
             return false;
         }
